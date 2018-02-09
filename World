@@ -1,0 +1,10 @@
+import pandas as pd
+import numpy as np
+import datetime
+from sklearn.linear_model import LassoCV
+from sklearn.cluster import KMeans
+
+def init(context):
+  context.trade_dates = get_trading_dates('2011-01-01', '2017-01-01')
+  
+ 
